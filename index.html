@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Paint</title>
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+</head>
+<body onresize="handleResize()">
+    <div class="app">
+        <div class="control">
+            <h2 class="control_title">My Paint</h2>
+            <div class="option_wrap">
+                <div class="type option_item">
+                    <input type="radio" name="pen-type" id="pen-pencil" checked>
+                    <label for="pen-pencil">
+                        <i class="fas fa-pencil-alt"></i>
+                    </label>
+                    <input type="radio" name="pen-type" id="pen-brush" >
+                    <label for="pen-brush">
+                        <i class="fas fa-paint-brush"></i>
+                    </label>
+                   
+                </div>
+                <div class="size option_item">     
+                    <label for="size">Size pen</label>
+                    <input type="range" name="size" id="size" value="5" min="1" max="100">
+                </div>
+                <div class="color option_item">
+                   
+                    <label for="color">Color Pickers</label>
+                    <input type="color" name="color" id="color" value="#fff">
+                </div>
+            </div>
+            <div class="setting-wrap">
+                <i class="setting-icon fas fa-cogs"></i>
+            </div>
+            <div class="action">
+                <button class="delete">Delete</button>
+                <button class="save">Save</button>
+            </div>
+           
+        </div>
+        <div id="canvas-wrapper">
+
+        </div>
+    </div>
+
+
+
+
+    <script src="./library/p5.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

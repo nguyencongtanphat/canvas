@@ -1,0 +1,80 @@
+/* mobile va tablet */
+@media (max-width:1023px){
+
+}
+/* tablet */
+@media(min-width:740px) and (max-width:1023px){
+
+}
+/* mobile */
+@media(max-width:739px){
+    .app{
+        width: 350px;
+        height: 500px;
+        top:35%;
+    }
+    .control_title{
+        font-size:16px;
+    }
+   
+    .action{
+        margin-left: 5px;
+        display: flex;
+      
+    }
+    .size label{
+        margin-right: 5px;
+    }
+    
+    .setting-wrap{
+        display: block;
+    }
+    .setting-icon{
+        font-size:25px;
+    }
+    .save{
+        margin-left: 5px;
+    }
+    .action button{
+        padding:10px;
+        font-size:15px;
+    }
+    .option_wrap{
+        position:absolute;
+        flex-direction: column;
+        top:100%;
+        background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+        left: 50%;
+        padding:10px;
+        transform: translateX(-50%);
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgb(110, 105, 105);
+       align-items: center;
+       font-size: 16px;
+       display:none;
+    }
+    .option_wrap.active{
+        display:block;
+    }
+    .option_item.size,.option_item.color{
+        margin: 15px 0 0 0;
+        display:flex;
+        justify-content:space-between;
+        width: 100%;
+    }
+    
+}
+   
+    
+   
+   
+    
+    
+  
+   
+   
+   
+    
+    
+    
+    
